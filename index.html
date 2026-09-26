@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>King Joe Lyrics — Fresh Afro Sound, Daily</title>
+<meta name="description" content="Daily Afrobeats, Amapiano & Alté drops — lyric excerpts, vibe breakdowns, and where to hear the full song.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#F3EFE9;
+    --ink-dim:#B9B2C9;
+    --night:#15121F;
+    --night-2:#1D1830;
+    --gold:#F2B84B;
+    --coral:#FF5D73;
+    --violet:#8D7CFF;
+    --line: rgba(243,239,233,0.12);
+    box-sizing:border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top: env(safe-area-inset-top, 0px);}
+  body{
+    margin:0;
+    background: var(--night);
+    color: var(--ink);
+    font-family:'Work Sans', system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Unbounded', system-ui, sans-serif;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+
+  header.site{
+    position:sticky;top:0;
+    top: env(safe-area-inset-top, 0px);
+    z-index:50;
+    background: rgba(21,18,31,0.86);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 28px;
+    max-width:1080px;margin:0 auto;
+  }
+  .logo{font-size:1.25rem;font-weight:900;display:flex;align-items:baseline;gap:2px;}
+  .logo .k{color:var(--gold);}
+  .logo .rest{color:var(--ink);}
+  .logo .tld{color:var(--ink-dim);font-weight:400;font-size:0.85em;}
+  .nav-links{display:flex;gap:18px;align-items:center;font-size:0.92rem;color:var(--ink-dim);}
+  .nav-links a:hover{color:var(--ink);}
+  .owner-badge{
+    font-size:0.76rem;color:var(--gold);
+    border:1px solid rgba(242,184,75,0.4);
+    padding:4px 10px;border-radius:20px;
+  }
+  .btn-add{
+    background:var(--coral);color:var(--night);
+    padding:8px 16px;border-radius:20px;
+    font-weight:600;font-size:0.88rem;
+    border:none;cursor:pointer;
+  }
+  .btn-add:hover{background:#ff7186;}
+
+  .hero{padding:72px 0 56px;position:relative;overflow:hidden;}
+  .hero::before{
+    content:"";position:absolute;top:-140px;right:-160px;
+    width:480px;height:480px;
+    background: radial-gradient(circle, var(--coral) 0%, transparent 70%);
+    opacity:0.28;filter:blur(10px);pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;bottom:-200px;left:-120px;
+    width:420px;height:420px;
+    background: radial-gradient(circle, var(--violet) 0%, transparent 70%);
+    opacity:0.22;filter:blur(10px);pointer-events:none;
+  }
+  .hero-inner{position:relative;z-index:1;}
+  .eyebrow-row{display:flex;align-items:center;gap:10px;margin-bottom:22px;color:var(--gold);font-size:0.95rem;}
+  .pulse{
+    width:8px;height:8px;border-radius:50%;background:var(--gold);
+    box-shadow:0 0 0 0 rgba(242,184,75,0.6);animation:pulse 2.2s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(242,184,75,0.55);}
+    70%{box-shadow:0 0 0 10px rgba(242,184,75,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,184,75,0);}
+  }
+  @media (prefers-reduced-motion: reduce){ .pulse{animation:none;} }
+  h1.hero-title{
+    font-size:clamp(2.4rem, 6vw, 4.4rem);font-weight:900;line-height:1.02;
+    max-width:15ch;color:var(--ink);
+  }
+  h1.hero-title em{font-style:normal;color:var(--coral);}
+  .hero-sub{margin-top:22px;max-width:46ch;color:var(--ink-dim);font-size:1.08rem;}
+
+  .drop-card{
+    margin-top:44px;border:1px solid var(--line);border-radius:18px;
+    background: linear-gradient(160deg, var(--night-2), rgba(29,24,48,0.4));
+    padding:30px;display:grid;grid-template-columns: 120px 1fr;gap:26px;align-items:start;
+  }
+  .art{
+    width:120px;height:120px;border-radius:14px;
+    background: linear-gradient(135deg, var(--gold), var(--coral));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Unbounded';font-weight:900;font-size:2rem;color:var(--night);flex-shrink:0;
+  }
+  .drop-meta{display:flex;flex-direction:column;gap:10px;}
+  .drop-tag{
+    font-size:0.78rem;color:var(--night);background:var(--gold);display:inline-flex;
+    padding:4px 10px;border-radius:20px;font-weight:600;width:fit-content;
+  }
+  .drop-song{font-size:1.5rem;font-weight:800;}
+  .drop-artist{color:var(--ink-dim);font-size:0.98rem;}
+  .drop-excerpt{
+    margin-top:6px;font-style:italic;color:var(--ink);border-left:2px solid var(--coral);
+    padding-left:14px;font-size:1.02rem;max-width:60ch;
+  }
+  .drop-note{color:var(--ink-dim);font-size:0.96rem;max-width:62ch;}
+
+  @media (max-width:640px){
+    .drop-card{grid-template-columns:1fr;}
+    .art{width:72px;height:72px;font-size:1.3rem;}
+  }
+
+  .feed-section{padding:64px 0 30px;}
+  .feed-head{
+    display:flex;justify-content:space-between;align-items:baseline;margin-bottom:34px;
+    border-bottom:1px solid var(--line);padding-bottom:18px;
+  }
+  .feed-head h2{font-size:1.7rem;}
+  .feed-head .count{color:var(--ink-dim);font-size:0.9rem;}
+
+  .post{display:grid;grid-template-columns: 84px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid var(--line);}
+  .art-sm{
+    width:84px;height:84px;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Unbounded';font-weight:800;color:var(--night);font-size:1.3rem;flex-shrink:0;
+  }
+  .post-date{color:var(--ink-dim);font-size:0.82rem;margin-bottom:4px;}
+  .post-title{font-size:1.18rem;font-weight:700;}
+  .post-artist{color:var(--ink-dim);font-size:0.92rem;margin-top:2px;}
+  .post-excerpt{
+    margin-top:12px;font-style:italic;border-left:2px solid var(--violet);
+    padding-left:12px;color:var(--ink);font-size:0.98rem;max-width:58ch;
+  }
+  .post-note{margin-top:10px;color:var(--ink-dim);font-size:0.95rem;max-width:62ch;}
+  .post-genre{
+    display:inline-block;margin-top:12px;font-size:0.76rem;color:var(--gold);
+    border:1px solid rgba(242,184,75,0.35);padding:3px 9px;border-radius:14px;
+  }
+  .post-remove{
+    margin-top:10px;background:none;border:none;color:var(--ink-dim);
+    font-size:0.8rem;cursor:pointer;text-decoration:underline;padding:0;
+  }
+  .post-remove:hover{color:var(--coral);}
+
+  @media (max-width:640px){
+    .post{grid-template-columns:56px 1fr;}
+    .art-sm{width:56px;height:56px;font-size:1rem;}
+  }
+
+  .empty-feed{color:var(--ink-dim);padding:30px 0;font-style:italic;}
+
+  .about-strip{margin-top:60px;padding:42px 0 70px;border-top:1px solid var(--line);}
+  .about-strip h3{font-size:1.25rem;margin-bottom:14px;}
+  .about-strip p{color:var(--ink-dim);max-width:64ch;font-size:0.96rem;}
+  .about-strip p + p{margin-top:12px;}
+
+  footer{
+    border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom, 0px));
+    color:var(--ink-dim);font-size:0.86rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  /* ---------- Modal ---------- */
+  .modal-backdrop{
+    position:fixed;inset:0;background:rgba(10,8,16,0.72);
+    display:none;align-items:flex-start;justify-content:center;
+    padding:40px 20px calc(40px + env(safe-area-inset-bottom,0px));
+    overflow-y:auto;z-index:100;
+  }
+  .modal-backdrop.open{display:flex;}
+  .modal{
+    background:var(--night-2);border:1px solid var(--line);border-radius:18px;
+    padding:28px;max-width:520px;width:100%;
+  }
+  .modal h3{font-size:1.3rem;margin-bottom:6px;}
+  .modal .sub{color:var(--ink-dim);font-size:0.9rem;margin-bottom:20px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:0.82rem;color:var(--ink-dim);margin-bottom:6px;}
+  .field input, .field textarea, .field select{
+    width:100%;background:var(--night);border:1px solid var(--line);
+    border-radius:10px;padding:10px 12px;color:var(--ink);font-size:0.95rem;
+    font-family:inherit;resize:vertical;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus{
+    outline:2px solid var(--coral);outline-offset:1px;
+  }
+  .modal-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:22px;}
+  .btn-ghost{
+    background:none;border:1px solid var(--line);color:var(--ink-dim);
+    padding:9px 16px;border-radius:20px;cursor:pointer;font-size:0.9rem;
+  }
+  .btn-ghost:hover{color:var(--ink);}
+  .btn-publish{
+    background:var(--coral);color:var(--night);border:none;
+    padding:9px 18px;border-radius:20px;cursor:pointer;font-weight:600;font-size:0.9rem;
+  }
+  .btn-publish:hover{background:#ff7186;}
+  .btn-publish:disabled{opacity:0.5;cursor:not-allowed;}
+  .form-error{color:var(--coral);font-size:0.85rem;margin-top:4px;}
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <div class="logo"><span class="k">King</span><span class="rest">Joe</span><span class="tld">Lyrics</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#feed">Daily drops</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="eyebrow-row"><span class="pulse"></span><span>Posting new sound today</span></div>
+    <h1 class="hero-title">The freshest Afro sound, <em>every single day</em>.</h1>
+    <p class="hero-sub">Afrobeats, Amapiano, Alté and everything moving out of Lagos, Accra and Joburg right now — lyric highlights, the story behind them, and where to hear the whole thing.</p>
+    <div id="heroDrop"></div>
+  </div>
+</section>
+
+<section class="feed-section wrap" id="feed">
+  <div class="feed-head">
+    <h2>The daily feed</h2>
+    <span class="count" id="feedCount"></span>
+  </div>
+  <div id="feedList"></div>
+</section>
+
+<section class="about-strip wrap" id="about">
+  <h3>What KingJoeLyrics is</h3>
+  <p>A daily stop for the freshest Afrobeats, Amapiano and Alté drops — a short lyric highlight, a quick breakdown of what the song's actually about, and a link to hear it in full or read the complete lyrics from an official source.</p>
+  <p>We post excerpts and commentary, not full lyrics — every song here links out to where you can hear it or read it properly. Building this way from day one so the daily feed can grow into a fully licensed lyrics catalogue down the line.</p>
+</section>
+
+<footer class="wrap">
+  <span>© 2026 King Joe Lyrics</span>
+  <span>Made for the love of Afro sound</span>
+</footer>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <h3>Add today's drop</h3>
+    <div class="sub">This publishes a new version of the site — everyone who opens the link sees it.</div>
+    <form id="postForm">
+      <div class="field">
+        <label for="f-title">Song title</label>
+        <input id="f-title" required maxlength="80" placeholder="e.g. Water No Get Enemy (2026 Refix)">
+      </div>
+      <div class="field">
+        <label for="f-artist">Artist</label>
+        <input id="f-artist" required maxlength="80" placeholder="e.g. Tunde Bakare & Aya Kel">
+      </div>
+      <div class="field">
+        <label for="f-genre">Genre</label>
+        <select id="f-genre">
+          <option>Afrobeats</option>
+          <option>Amapiano</option>
+          <option>Alté</option>
+          <option>Afrobeats / Amapiano</option>
+          <option>Highlife</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-excerpt">Short lyric excerpt (keep it brief — a line or two, not the full song)</label>
+        <textarea id="f-excerpt" rows="2" maxlength="200" placeholder='"...if you fight water, water go still win..."'></textarea>
+      </div>
+      <div class="field">
+        <label for="f-note">Your breakdown — what it's about, the vibe, the story</label>
+        <textarea id="f-note" rows="3" maxlength="400" placeholder="What's the song about? What makes it hit?"></textarea>
+      </div>
+      <div id="formError" class="form-error" style="display:none;"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" id="cancelBtn">Cancel</button>
+        <button type="submit" class="btn-publish" id="publishBtn">Publish drop</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+
+  // ---- Seed posts (used only the very first time the page has never been republished) ----
+  var POSTS = [
+    {
+      title: "My Healer",
+      artist: "Seyi Vibez ft. Omah Lay",
+      date: "Today",
+      genre: "Afrobeats",
+      excerpt: "",
+      note: "Seyi Vibez's first single of the year, and it's his romantic side — soulful vocals over fast, choral-tinged percussion. Omah Lay opens the track, then Seyi carries it into gospel-adjacent territory, calling his love interest his healer. A course-correction after the more experimental 'Fuji Moto' album, and it works."
+    },
+    {
+      title: "Formation",
+      artist: "Adekunle Gold ft. Olamide",
+      date: "Yesterday",
+      genre: "Afrobeats / Fuji",
+      excerpt: "",
+      note: "The reunion fans have wanted for years — Adekunle Gold linking back up with his former YBNL boss Olamide. Gold calls it his 'Electro Fuji' sound: Fuji rhythms dressed in modern Afrobeats production. Feels symbolic as much as musical."
+    },
+    {
+      title: "Pressure",
+      artist: "Seyi Vibez",
+      date: "2 days ago",
+      genre: "Street-Pop",
+      excerpt: "",
+      note: "A love song built around a clever double meaning — the pressure of being someone's whole world, and the pressure a diamond needs to form. Classic Seyi: street cadence wrapped around a genuinely tender idea."
+    },
+    {
+      title: "No Religion",
+      artist: "Olamide & Asake",
+      date: "3 days ago",
+      genre: "Afrobeats / Amapiano",
+      excerpt: "",
+      note: "Their second link-up in a week, following the massive 'Amapiano' collab. This one leans into summer-anthem territory — big, carefree, built for outdoor parties and street floats."
+    }
+  ];
+
+  // If this page has already been republished at least once, POSTS_DATA below
+  // (injected at publish time) overrides the seed above.
+  if (window.__KJ_POSTS__) { POSTS = window.__KJ_POSTS__; }
+
+  var artArtStyles = [
+    "linear-gradient(135deg, var(--gold), var(--coral))",
+    "linear-gradient(135deg, var(--violet), var(--coral))",
+    "linear-gradient(135deg, var(--gold), var(--violet))"
+  ];
+
+  function initials(title){
+    return (title || "??").split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w[0];}).join("").toUpperCase();
+  }
+
+  function escapeHtml(s){
+    return (s || "").replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  function renderHero(){
+    var host = document.getElementById("heroDrop");
+    if (!POSTS.length){
+      host.innerHTML = "";
+      return;
+    }
+    var p = POSTS[0];
+    host.innerHTML =
+      '<div class="drop-card">' +
+        '<div class="art">' + escapeHtml(initials(p.title)) + '</div>' +
+        '<div class="drop-meta">' +
+          '<span class="drop-tag">Today\'s drop</span>' +
+          '<div class="drop-song">' + escapeHtml(p.title) + '</div>' +
+          '<div class="drop-artist">by ' + escapeHtml(p.artist) + '</div>' +
+          (p.excerpt ? '<div class="drop-excerpt">' + escapeHtml(p.excerpt) + '</div>' : '') +
+          (p.note ? '<div class="drop-note">' + escapeHtml(p.note) + '</div>' : '') +
+        '</div>' +
+      '</div>';
+  }
+
+  function renderFeed(){
+    var list = document.getElementById("feedList");
+    var rest = POSTS.slice(1);
+    document.getElementById("feedCount").textContent = POSTS.length + (POSTS.length === 1 ? " post" : " posts");
+    if (!rest.length){
+      list.innerHTML = '<div class="empty-feed">Older drops will show up here as you post more.</div>';
+      return;
+    }
+    list.innerHTML = rest.map(function(p, i){
+      var bg = artArtStyles[i % artArtStyles.length];
+      return (
+        '<div class="post">' +
+          '<div class="art-sm" style="background:' + bg + '">' + escapeHtml(initials(p.title)) + '</div>' +
+          '<div>' +
+            '<div class="post-date">' + escapeHtml(p.date || "") + '</div>' +
+            '<div class="post-title">' + escapeHtml(p.title) + '</div>' +
+            '<div class="post-artist">' + escapeHtml(p.artist) + '</div>' +
+            (p.excerpt ? '<div class="post-excerpt">' + escapeHtml(p.excerpt) + '</div>' : '') +
+            (p.note ? '<div class="post-note">' + escapeHtml(p.note) + '</div>' : '') +
+            (p.genre ? '<span class="post-genre">' + escapeHtml(p.genre) + '</span>' : '') +
+          '</div>' +
+        '</div>'
+      );
+    }).join("");
+  }
+
+  function renderAll(){
+    renderHero();
+    renderFeed();
+  }
+  renderAll();
+
+  // ---- Owner admin: add-post flow, wired to the artifact capability ----
+  var artifactApi = null;
+  var isOwner = false;
+
+  function buildFullDocument(posts){
+    // Serializes the *entire current page* with a fresh POSTS array baked in,
+    // so publishing produces a standalone, self-contained document again.
+    var doc = document.documentElement.outerHTML;
+    var full = "<!DOCTYPE html>\n" + doc;
+    var dataScript = "<script>window.__KJ_POSTS__ = " + JSON.stringify(posts) + ";</" + "script>";
+    // Inject the data script right after <head> opens so it's available before the main script runs.
+    full = full.replace("<head>", "<head>" + dataScript);
+    return full;
+  }
+
+  function showAdminUI(){
+    var nav = document.getElementById("navLinks");
+    var badge = document.createElement("span");
+    badge.className = "owner-badge";
+    badge.textContent = "Signed in";
+    nav.appendChild(badge);
+
+    var btn = document.createElement("button");
+    btn.className = "btn-add";
+    btn.textContent = "+ Add today's drop";
+    btn.addEventListener("click", openModal);
+    nav.appendChild(btn);
+  }
+
+  function openModal(){
+    document.getElementById("modalBackdrop").classList.add("open");
+    document.getElementById("f-title").focus();
+  }
+  function closeModal(){
+    document.getElementById("modalBackdrop").classList.remove("open");
+    document.getElementById("postForm").reset();
+    var err = document.getElementById("formError");
+    err.style.display = "none";
+  }
+
+  document.getElementById("cancelBtn").addEventListener("click", closeModal);
+  document.getElementById("modalBackdrop").addEventListener("click", function(e){
+    if (e.target === this) closeModal();
+  });
+
+  document.getElementById("postForm").addEventListener("submit", async function(e){
+    e.preventDefault();
+    var err = document.getElementById("formError");
+    err.style.display = "none";
+
+    var title = document.getElementById("f-title").value.trim();
+    var artist = document.getElementById("f-artist").value.trim();
+    var genre = document.getElementById("f-genre").value;
+    var excerpt = document.getElementById("f-excerpt").value.trim();
+    var note = document.getElementById("f-note").value.trim();
+
+    if (!title || !artist){
+      err.textContent = "Song title and artist are required.";
+      err.style.display = "block";
+      return;
+    }
+    if (excerpt.split(/\s+/).filter(Boolean).length > 30){
+      err.textContent = "Keep the excerpt short — a line or two, not the full lyrics.";
+      err.style.display = "block";
+      return;
+    }
+
+    var newPost = {
+      title: title,
+      artist: artist,
+      date: "Today",
+      genre: genre,
+      excerpt: excerpt,
+      note: note
+    };
+
+    // Age up existing "Today" labels so the new post is clearly the freshest.
+    var updated = POSTS.map(function(p){
+      if (p.date === "Today") return Object.assign({}, p, { date: "Yesterday" });
+      return p;
+    });
+    updated.unshift(newPost);
+
+    var btn = document.getElementById("publishBtn");
+    btn.disabled = true;
+    btn.textContent = "Publishing...";
+
+    try {
+      if (!artifactApi){
+        err.textContent = "Can't publish right now — try reopening the page.";
+        err.style.display = "block";
+        btn.disabled = false;
+        btn.textContent = "Publish drop";
+        return;
+      }
+      POSTS = updated;
+      renderAll();
+      var html = buildFullDocument(POSTS);
+      await artifactApi.publish(html);
+      closeModal();
+    } catch (ex){
+      err.textContent = "Couldn't publish (" + (ex && ex.message ? ex.message : "unknown error") + "). Try again.";
+      err.style.display = "block";
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Publish drop";
+    }
+  });
+
+  // ---- Wire up capabilities once the platform bridge is ready ----
+  async function setup(){
+    if (!window.claude || !window.claude.use) return;
+    try {
+      var user = await window.claude.use("user");
+      if (user){
+        isOwner = (typeof user.canEdit === "function") ? user.canEdit() : (user.isOwner ? user.isOwner() : false);
+      }
+    } catch(e){ /* no user context available */ }
+
+    try {
+      artifactApi = await window.claude.use("artifact");
+    } catch(e){ /* no artifact capability available */ }
+
+    if (isOwner && artifactApi){
+      showAdminUI();
+    }
+  }
+  setup();
+
+})();
+</script>
+
+</body>
+</html>
